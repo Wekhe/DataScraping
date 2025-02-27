@@ -4,7 +4,7 @@ import pandas as pd
 import requests 
 import time
 
-all_teams = [] ## list to store all teams
+all_teams = [] ## list that store all teams
 
 html = requests.get('https://fbref.com/en/comps/9/Premier-League-Stats').text ##getting the html from the website
 soup = BeautifulSoup(html, 'lxml')
